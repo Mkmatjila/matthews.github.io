@@ -1,0 +1,270 @@
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    width: 35%;
+    background-color:lightseagreen;
+    float: inline-end;
+    border-bottom-left-radius:10px ;
+    
+    
+    
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float:left;
+    display:block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color:lightblue;
+    color: goldenrod;
+  }
+  
+  
+  
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    one{background-color: orange;}
+  
+  .two{background-color: white;}
+  
+  .three{background-color: black;}
+  
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    one{background-color: orange;}
+  
+  .two{background-color: white;}
+  
+  .three{background-color: black;}
+  
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    one{background-color: orange;}
+  
+  .two{background-color: white;}
+  
+  .three{background-color: black;}
+  
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    one{background-color: orange;}
+  
+  .two{background-color: white;}
+  
+  .three{background-color: black;}
+  
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    one{background-color: orange;}
+  
+  .two{background-color: white;}
+  
+  .three{background-color: black;}
+  
+  }
+  
+  
+  /* COLUMN */
+  
+  
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  
+  [class*="col-"] {
+    float:left;
+    padding: 15px;
+  }
+  
+  
+  .aside {
+    background-color:NONE;
+    padding: 15px;
+   
+    ;
+  
+    
+  }
+
+  .btn{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .btn:focus {
+    outline: none;
+  }
+  
+  .btn {
+    background-image: linear-gradient(
+      to right,
+      #eb3941,
+      #f15e64,
+      #e14e53,
+      #e2373f
+    );
+    box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
+  }
+
+  
+  
+  /* For desktop: */
+  
+  .col-1 {width: 50%;}
+  
+  .col-2 {width: 50%;}
+  
+  
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+  
+  /* profile pic */
+  img{border-radius:100PX;
+    width:300PX;
+    height: 300PX;
+    box-shadow: pink;
+    border-style: groove;
+    border-color: rgb(232, 230, 238);
+    filter: drop-shadow(1px 1px 20PX rgb(243, 255, 192));
+    
+    
+  }
+  
+  /* social media link */
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: none;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: none;
+    color: white;
+  }
+  
+  .fa-google {
+    background: none;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: none;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: none;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: none;
+    color: white;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  }
+  
+  section{
+    height: auto;
+    
+    margin: 0;
+    padding:0;
+    
+    
+  }
+  
+  .one{background-color:#333;border-bottom-right-radius:200px ;
+    ;
+    background-repeat:no-repeat;
+    
+    background-size: cover;
+}
+  
+  .two{background-color: white;
+    background-image:url(96b3d443350a17367f8ecf87b25bc561.gif) ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:contain;
+  border: solid;
+  border-color: grey;
+  border-width: 10px;
+  border-top-right-radius:100px ;
+  border-top:none;
+  border-left: none;
+  border-bottom: none;
+  }
+  
+  .three{background-color: orange;
+  }
+  
+  .container{
+    
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  .four{background-color: black;}
+
+  
