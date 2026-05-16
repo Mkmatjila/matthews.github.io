@@ -1,184 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-     
-    
-    <title>MATTHEWS MATJILA PORTFOLIO</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matthews Matjila | Front-End Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; }
+    .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%); }
+    .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+  </style>
 </head>
-<script>
-  alert("Hey Stranger,Welcome to my site!");
-  function myFunction(elmnt, clr) {
-  elmnt.style.color = clr;
-}
-
-
-  </script>
-  
-<body>
-
-     <div class="container">
-      <section class="one">
-    <div class="topnav">
-
-        <a href="My projects.html">PROJECTS</a>
-        <a href="personal.html" style="color: goldenrod;">PERSONAL DETAILS</a>
-        
+<body class="bg-zinc-950 text-zinc-100">
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full bg-zinc-950/90 backdrop-blur-md z-50 border-b border-zinc-800">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+      <div class="text-2xl font-bold tracking-tight">Matthews<span class="text-emerald-400">.</span></div>
+      <div class="hidden md:flex gap-8 text-sm font-medium">
+        <a href="#about" class="hover:text-emerald-400 transition">About</a>
+        <a href="#skills" class="hover:text-emerald-400 transition">Skills</a>
+        <a href="#projects" class="hover:text-emerald-400 transition">Projects</a>
+        <a href="#contact" class="hover:text-emerald-400 transition">Contact</a>
       </div>
-<button type="button" class="btn" onclick='document.getElementById("h1").innerHTML = "Welcome To My Site!"'  >Note</button>
-    
-      <div class="row">
-        <div class="col-2"> 
-          <h1 style="color: greenyellow;
-          font-size: 60PX;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" id="h1">MATTHEWS MATJILA</h1><br>
-          <H2  style="color: aqua;">FRONT END DEVELOPER</H2> <br>
-          <div><p style="font-size:20Px;color: white;font-weight: bold;">I am a flexible and  with excellent time management skills. I am a good communicator with inter personal skills and am used to working in a team whilst also being capable of using own initiative. I am skilled In dealing with problems in a resourceful manner and negotiating to achieve beneficial agreement. I am always enthusiastic to learn and undertake new challenges.</p></div>
-</div>
-      
-        <div class="col-1 right">
-          <div class="aside">
+    </div>
+  </nav>
 
-           
-                
-                <img  src="pic5.jpg" >
-                
-             
-             </div>
+  <!-- Hero -->
+  <section class="hero-bg min-h-screen flex items-center pt-20">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h1 class="text-6xl md:text-7xl font-bold leading-tight mb-6">
+          Hi, I'm <span class="text-emerald-400">Matthews Matjila</span>
+        </h1>
+        <p class="text-3xl text-zinc-400 mb-6">Self-taught Front-End Developer</p>
+        <p class="text-lg text-zinc-300 max-w-md mb-10">
+          Passionate about turning ideas into beautiful, responsive websites. 
+          Fast learner with strong communication skills and a drive to build great digital experiences.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#projects" class="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 rounded-2xl font-semibold transition text-lg">See My Projects</a>
+          <a href="#contact" class="px-8 py-4 border-2 border-zinc-300 hover:border-white rounded-2xl font-semibold transition text-lg">Get In Touch</a>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <img src="KEO.jpg" alt="Matthews Matjila" class="w-80 h-80 object-cover rounded-3xl shadow-2xl ring-4 ring-emerald-500/30">
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-24 bg-zinc-900">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-5xl font-bold mb-10 text-center">My Journey</h2>
+      <div class="text-lg leading-relaxed text-zinc-300 space-y-6">
+        <p>I spent the past year teaching myself to code — from Codecademy and freeCodeCamp to building real projects and connecting with developers at local study groups.</p>
+        <p>I'm flexible, a strong communicator, and comfortable working in teams or taking initiative. Always eager to learn and take on new challenges.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-5xl font-bold mb-12 text-center">Skills & Technologies</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="bg-zinc-900 p-8 rounded-3xl text-center card-hover transition">HTML5</div>
+        <div class="bg-zinc-900 p-8 rounded-3xl text-center card-hover transition">CSS3 / Tailwind</div>
+        <div class="bg-zinc-900 p-8 rounded-3xl text-center card-hover transition">JavaScript</div>
+        <div class="bg-zinc-900 p-8 rounded-3xl text-center card-hover transition">Responsive Design</div>
+        <div class="bg-zinc-900 p-8 rounded-3xl text-center card-hover transition">Git & GitHub</div>
+        <div class="bg-zinc-900 p-8 rounded-3xl text-center card-hover transition">Problem Solving</div>
+        <!-- Add more as you learn -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-24 bg-zinc-900">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-5xl font-bold mb-12 text-center">Featured Projects</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Add your real projects here -->
+        <div class="bg-zinc-800 rounded-3xl overflow-hidden card-hover transition">
+          <img src="pic1.jpg" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="font-semibold text-xl mb-2">Project One</h3>
+            <p class="text-zinc-400 mb-4">Short description of the project and technologies used.</p>
+            <a href="#" class="text-emerald-400 hover:underline flex items-center gap-2">View Project <span>→</span></a>
           </div>
         </div>
-      </section> 
-
-      <section class="two">
-        
-
-        <p id="demo"></p>
-        
-          
-        <Div style="font-size: 20PX;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-        <h1 style="font-size: 60px;">My journery as self taught software engineer </h1>
-        <BR>
-
-        <P>I spent this year teaching myself how to code. It has been a crazy ride. If you want to learn web development or have already started, here are some things that helped me the most.</P>
-<BR>
-         <h2> Online Courses</h2> <BR>
-
-         <P> My first resource was Codecademy. As a beginner, their courses were amazing. The explanations made a lot of sense. The exercises gave me a feel for coding. Later, freeCodeCamp gave me extra practice and covered additional concepts. I alternated between the two and they seemed to fill in each other’s gaps.</P> <br>
-          <P>Eventually, I settled with freeCodeCamp. I liked the curriculum and felt I would be a competent full-stack developer by the end of it. It ended up being a good choice but I often relied on other resources too. One major and unexpected source of learning has been people: smart, generous, awesome people! </P>
-          <BR>
-         <H3>Other Developers </H3> <BR>
-
-          <P>A friend suggested I go to the local freeCodeCamp study group. It was my first time talking to other developers. I was blown away by how welcoming and supportive they were!</P> <br>
-          <P>They were at various levels of experience. Some had jobs and were working on side projects. Others were learning through programs like Treehouse or the Odin Project. When they found out I had just started my journey, they gave me tons of helpful tips.</P> <br>
-         <P> One guy showed me his GitHub profile and explained how important it was to be active there. He said hiring managers look at three things: your GitHub, your portfolio, and your LinkedIn.</P>
-<BR><BR>
-          <H4>My GitHub activity</H4>
-<BR>
-          <P>I had made a portfolio page and timidly showed it to the group. It was nothing but a title, a picture, and a caption. All in Times New Roman! I expected to hear criticism or some polite grunts but instead received congratulations! They loved the fact that I had already hosted the site myself and even used my own domain name. </P> <br>
-          <P>I remember asking all sorts of questions. I learned more in those two hours than in a whole day of studying at home. From that moment, I realized that talking to other developers would be a huge part of my learning experience. It was energizing, encouraging, and helped me focus on the important stuff.</P>
-          <BR>
-</Div>
-      </section>
-      <section class="three">
-        <div class="slider owl-carousel">
-          <div class="card">
-            <div class="img">
-    <img src="pic1.jpg" alt=""></div>
-    <div class="content">
-              <div class="title">
-    MATTHEWS MATJILA</div>
-    <div class="sub-title">
-    Graphic Designer</div>
-    <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil minus sed unde voluptas cumque.</p>
-    <div class="btn">
-                <button>Read more</button>
-              </div>
-    </div>
-    </div>
-    <div class="card">
-            <div class="img">
-    <img src="pic2.jpg" alt=""></div>
-    <div class="content">
-              <div class="title">
-    HTML DEVELOPER</div>
-    <div class="sub-title">
-    HTML Developer</div>
-    <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil minus sed unde voluptas cumque.</p>
-    <div class="btn">
-                <button>Read more</button>
-              </div>
-    </div>
-    </div>
-    <div class="card">
-            <div class="img">
-    <img src="pic3.jpg" alt=""></div>
-    <div class="content">
-              <div class="title">
-    Eliana Maia</div>
-    <div class="sub-title">
-    App Developer</div>
-    <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil minus sed unde voluptas cumque.</p>
-    <div class="btn">
-                <button>Read more</button>
-              </div>
-    </div>
-    </div>
-    </div>
-    <script>
-          $(".slider").owlCarousel({
-            loop: true,
-            autoplay: true,
-            autoplayTimeout: 2000, //2000ms = 2s;
-            autoplayHoverPause: true,
-          });
-        </script>
-
-
-      </section>
-      <section class="four">
-      <Div style="font-size: 20PX;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: white;">
-       <h1>CONTACT ME </h1>
-       <br> 
-       <a href ="mailto:MATJILAKMATTHEWS@GMAIL.COM" style="color: white;">MATJILAKMATTHEWS@GMAIL.COM</a> <br>
-       <a href="tel:+27788118620" style="color: white;">+27788118620</a>
-
-      <br>
-      
-       <P>2034 X EXTENSION, MABOPANE, PRETORIA, GAUTENG , 0190</P>
-        
-        
-       <div>
-         <!-- Add font awesome icons -->
-        <a href="https://www.facebook.com/profile.php?id=100082917879680" class="fa fa-facebook"></a> 
-       <a href="https://x.com/matthewsmatjila?t=3RGCa-ziQLt3qNztRauJ7g&s=35" class="fa fa-twitter"></a>
-       <a href="https://myaccount.google.com/profile?pli=1" class="fa fa-google"></a>
-       <a href="https://www.linkedin.com/in/matthewskmatjila?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin"></a>
-       <a href="https://youtube.com/@matthewsmatjila5960?si=989C2D-B6krnF7ye" class="fa fa-youtube"></a>
-       <a href="https://www.instagram.com/matthewsmatjil/?hl=en" class="fa fa-instagram"></a>
-              </div>
-      </Div>
-      </section>
+        <!-- Duplicate the block above for more projects -->
       </div>
-      
-      
+    </div>
+  </section>
 
+  <!-- Contact -->
+  <section id="contact" class="py-24">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-5xl font-bold mb-8">Let's Work Together</h2>
+      <a href="mailto:MATJILAKMATTHEWS@GMAIL.COM" class="block text-3xl text-emerald-400 hover:text-emerald-300 mb-4">MATJILAKMATTHEWS@GMAIL.COM</a>
+      <p class="text-2xl mb-2">+27 788 118 620</p>
+      <p class="text-zinc-400">Mabopane, Pretoria, Gauteng</p>
 
-       </div>
-
-
+      <div class="flex justify-center gap-10 mt-16 text-5xl">
+        <a href="https://github.com/Mkmatjila" target="_blank" class="hover:text-emerald-400 transition"><i class="fab fa-github"></i></a>
+        <!-- Add LinkedIn, etc. -->
       </div>
-     </div>
-                     
-        </div>     
-  
+    </div>
+  </section>
+
+  <footer class="py-12 text-center text-zinc-500 border-t border-zinc-800">
+    © 2026 Matthews Matjila • Built with passion in South Africa
+  </footer>
 </body>
 </html>
